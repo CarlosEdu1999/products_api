@@ -8,7 +8,7 @@ from rest_framework.permissions import IsAuthenticated
 
 
 class ProductsViewSet(viewsets.ModelViewSet):
-    """Exibindo todos os alunos e alunas"""
+    """Exibindo todos os produtos"""
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     filter_backends = [DjangoFilterBackend, SearchFilter]
